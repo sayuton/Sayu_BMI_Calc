@@ -2,14 +2,18 @@
   "name": "hello-world",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sayuton.github.io/Sayu_BMI_Calc/",
   "dependencies": {
     "react": "^15.5.3",
     "react-dom": "^15.5.3"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
